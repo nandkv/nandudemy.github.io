@@ -4,11 +4,11 @@ This page will host all the open questions and updates about the course on Udemy
 
 ## Resolved Issues
 ```markdown
-**How to setup SSH ?**
+How to setup SSH ? Please setup this way.
 ```
 
 ```markdown
-**How do you start the job on Windows ?**
+How do you start the job on Windows ?
 
 ```
 
