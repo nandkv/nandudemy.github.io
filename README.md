@@ -3,9 +3,9 @@
 This page will host all the open questions and updates about the course on Udemy.
 
 ```markdown
-### Resolved Issues
+1. How to setup SSH ?
 
-### Resolved Issues
+2. How do you start the job on Windows ?
 
 ```
 ### About the Course
