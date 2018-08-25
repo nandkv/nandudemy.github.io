@@ -22,6 +22,33 @@ Note that the above change is global and you can change it back as you need. Typ
 This is the sequence in which maven will resolve dependency when you do the build: maven -> local repo -> artifactory/nexus -> internet.
 ```
 
+```markdown
+if multiple developers are working on the same branch , how to push the changes to the develop branch or QA branch , only with one developer the releases are explained . But in real time it is more than one developer works on the same release.? 
+Using GitFlow at any given time two releases can be worked on simultaneously i.e the two main branches that you would be using would be release (preparing for prod release i.e qa/staging) and develop (working on next release). if you have more than those two branches as central branches then you are not using gitflow and you are adding more complexity to your branching/deployment strategy and is a sign that you are probably doing something wrong from a DevOps model.
+
+How can multiple developers work on develop:
+
+dev1 - create a feature branch 1 from develop
+
+dev2 - create a feature branch 2 from develop
+
+dev1 - when done creates a PR (pull request) to develop and lead reviews and merges the PR to develop.
+
+dev2 - when done ensures that he pulls from develop into is feature branch 2 and ensures that all merges are successful, runs the tests and verifies that his changes still work and submits a PR. lead reviews and merges to develop.
+
+The same process applies to when working on release branch:
+
+release branch assuming is ready for August release and in QA and you find bugs.
+
+dev1 - create a feature branch 3 from release
+
+dev2 - create a feature branch 4 from release
+
+dev1 - when done creates a PR (pull request) to release and lead reviews and merges the PR to release.
+
+dev2 - when done ensures that he pulls from release into is feature branch 4 and ensures that all merges are successful, runs the tests and verifies that his changes still work and submits a PR. lead reviews and merges to release.
+```
+
 ### About the Course
 [DevOps Course by Nand](https://www.udemy.com/devops-with-git-jenkins-artifactory-and-elk-stack) 
 
